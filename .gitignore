@@ -1,0 +1,11 @@
+node_modules/
+release/
+*.log
+.DS_Store
+.env
+.vscode/
+.idea/
+*.swp
+*.swo
+.cache/
+docs/

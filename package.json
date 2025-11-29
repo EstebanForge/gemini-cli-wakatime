@@ -1,0 +1,46 @@
+{
+  "name": "gemini-cli-wakatime",
+  "version": "1.0.0",
+  "description": "WakaTime plugin for Gemini CLI",
+  "scripts": {
+    "build": "tsc && esbuild src/wakatime-server.ts --bundle --platform=node --outfile=dist/wakatime-server.js --external:",
+    "watch": "tsc --watch",
+    "package": "node scripts/package.js",
+    "release:major": "npm version major && npm publish && git push && git push --tags",
+    "release:minor": "npm version minor && npm publish && git push && git push --tags",
+    "release:patch": "npm version patch && npm publish && git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanForge/gemini-cli-wakatime.git"
+  },
+  "keywords": [
+    "gemini",
+    "gemini-cli",
+    "time-tracking",
+    "ai"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1",
+    "adm-zip": "^0.5.16",
+    "request": "^2.88.2",
+    "semver": "^7.7.2",
+    "which": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/adm-zip": "^0.5.7",
+    "@types/request": "^2.48.12",
+    "@types/semver": "^7.7.0",
+    "@types/which": "^3.0.4",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.3.0"
+  },
+  "author": "EstebanForge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EstebanForge/gemini-cli-wakatime/issues"
+  },
+  "homepage": "https://github.com/EstebanForge/gemini-cli-wakatime#readme"
+}

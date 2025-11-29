@@ -1,0 +1,12 @@
+{
+  "name": "gemini-cli-wakatime",
+  "version": "1.0.0",
+  "mcpServers": {
+    "wakatime": {
+      "command": "node",
+      "args": ["${extensionPath}${/}dist${/}wakatime-server.js"],
+      "cwd": "${extensionPath}"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
